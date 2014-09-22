@@ -14,12 +14,14 @@ body {
 }
 
 article {
-    height: 100%;
+    /*height: 100%;*/
 }
 
 article #services {
     padding-top: auto;
 }
+
+#services { display: none; }
 
 /*----------------------
 ---Main Layout Styles---
@@ -399,11 +401,11 @@ header.jumbotron {
 -----Twitter Styles-----
 ------------------------*/
 
-#twitter {
+/*#twitter {
     color:#fff;
     background:#21b799;
     padding:60px 0;
-}
+}*/
 
 /*#twitter a:hover,
 #twitter a:active,
