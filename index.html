@@ -43,52 +43,53 @@
     </div>
   </header>
 
-  <article>
+  <section id="services">
+    <div class="container">
+      <h1 class="section-title scrollimation scale-in in">Gold nuggets<i class="icon fa fa-cubes"></i></h1>
+      <div class="row">
+        <div class="col-md-6"><i class="fa fa-fw fa-github"></i> GitHub</div>
+        <div class="col-md-6"><i class="fa fa-fw fa-bitbucket"></i> Bitbucket</div>
+        <div class="col-md-6"><i class="fa fa-fw fa-cube"></i> Docker Hub</div>
+        <div class="col-md-6"><i class="fa fa-fw fa-globe"></i> Website</div>
+        <div class="col-md-6"><i class="fa fa-fw fa-envelope"></i> Email</div>
+      </div>
+    </div>
+  </section>
 
-    <footer id="main-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6 left-col">
-            <h1 class="small-logo">Martin Jensen<br><span>contact me for further enquiries</span></h1>
-            <ul class="footer-nav">
-              <li><a href="mailto:martin@25144754.dk">Email</a></li>
-              <li><a href="https://www.linkedin.com/in/martinakseljensen">LinkedIn</a></li>
-            </ul>
-          </div>
-          <div class="col-sm-6 right-col">
-            <h2>Who Am I?</h2>
-            <p>Some say, he's a robot, and he might be great. <br/>All we know is; he is human.</p>
-          </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 left-col">
+          <h1 class="small-logo">Martin Jensen<br><span>contact me for further enquiries</span></h1>
+          <ul class="footer-nav">
+            <li><a href="mailto:martin@25144754.dk">Email</a></li>
+            <li><a href="https://www.linkedin.com/in/martinakseljensen">LinkedIn</a></li>
+            <li><a href="https://github.com/cptactionhank">GitHub</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 right-col">
+          <h2></h2>
+          <p></p>
         </div>
       </div>
-    </footer>
-    <section id="services">
-      <div class="container">
-        <h1 class="section-title scrollimation scale-in in">Gold nuggets<i class="icon fa fa-cubes"></i></h1>
-        <div class="row">
-          <div class="col-md-6"><i class="fa fa-fw fa-github"></i> GitHub</div>
-          <div class="col-md-6"><i class="fa fa-fw fa-bitbucket"></i> Bitbucket</div>
-          <div class="col-md-6"><i class="fa fa-fw fa-cube"></i> Docker Hub</div>
-          <div class="col-md-6"><i class="fa fa-fw fa-globe"></i> Website</div>
-          <div class="col-md-6"><i class="fa fa-fw fa-envelope"></i> Email</div>
-        </div>
-      </div>
-    </section>
-  </article>
+    </div>
+  </footer>
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src='//cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/jquery.flexslider-min.js'></script>
   <script type="text/javascript">
-    $('.home-slider').flexslider({
-        animation: "slide",
-        directionNav: false,
-        controlNav: false,
-        direction: "vertical",
-        useCSS: true,
-        slideshowSpeed: 2500,
-        animationSpeed: 500,
-        // smoothHeight: false
-        slideshow: true
+    $(document).ready(function() {
+      $('.home-slider').flexslider({
+          animation: "slide",
+          directionNav: false,
+          controlNav: false,
+          direction: "vertical",
+          useCSS: true,
+          slideshowSpeed: 2500,
+          animationSpeed: 500,
+          smoothHeight: false,
+          slideshow: true
+      })
     });
   </script>
 
