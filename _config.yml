@@ -1,0 +1,83 @@
+# Site settings
+title: Principia de Martin
+description: > # this means to ignore newlines until "baseurl:"
+  Martin is a curious sole who keeps learning and checking out new 
+  technologies, programming languages, and much more. With an 
+  entrepreneurial spirit a lot creative ideas and project arises only
+  to broaden his curiosity even further.
+baseurl: "" # the subpath of your site, e.g. /blog/
+
+author:
+  name: Martin Jensen
+  email: martin@25144754.dk
+  url: "http://25144754.dk" # the base hostname & protocol for your site
+  # twitter_username: dotmaage
+  github:  cptactionhank
+  linkedin: martinakseljensen
+
+# Build settings
+markdown: redcarpet
+
+redcarpet:
+  extensions: [
+    "no_intra_emphasis",
+  	"fenced_code_blocks",
+  	"disable_indented_code_blocks",
+  	"prettify",
+  	"space_after_headers",
+  	"autolink",
+  	"quote",
+  	"strikethrough",
+  	"superscript",
+  	"tables",
+  	"with_toc_data",
+    "html_toc",
+  ]
+# Settings for comments helper
+# Set 'provider' to the comment provider you want to use.
+# Set 'provider' to false to turn commenting off globally.
+# comments :
+#   provider : disqus
+#   disqus :
+#     short_name : jekyllbootstrap
+#   livefyre :
+#     site_id : 123
+#   intensedebate :
+#     account : 123abc
+#   facebook :
+#     appid : 123
+#     num_posts: 5
+#     width: 580
+#     colorscheme: light
+
+# Settings for analytics helper
+# Set 'provider' to the analytics provider you want to use.
+# Set 'provider' to false to turn analytics off globally.
+#        
+# analytics :
+#   provider : google 
+#   google : 
+#       tracking_id : 'UA-123-12'
+#   getclicky :
+#     site_id : 
+#   mixpanel :
+#       token : '_MIXPANEL_TOKEN_'
+#   piwik :
+#       baseURL : 'myserver.tld/piwik' # Piwik installation address (without protocol)
+#       idsite : '1'                   # the id of the site on Piwik
+
+defaults:
+  - # posts defaults
+    scope:
+      path: /blog/_posts
+      type: posts
+    values:
+      layout: post
+      permalink: /blog/:year/:month/:day/:title
+  - # posts defaults
+    scope:
+      path: /notes/_posts
+      type: posts
+    values:
+      layout: post
+      permalink: /:categories/:title
