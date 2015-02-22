@@ -1,16 +1,19 @@
 ---
-title: My Notes
+title: My Notebooks
 layout: default
 ---
 <div class="home">
+<p>On this page you will find my notebooks collection with information I have found usefull when working with various frameworks, software, and technology. Feel free to have a look and start a discuss by entering a comment in the note pages or communicating with me in other ways.</p>
 
-  <ul class="post-list">
-    {% for post in site.categories.notes %}
-    <li>
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </li>
-    {% endfor %}
-  </ul>
-
+{% for collection in site.collections %}
+<h3>{{ collection[1].title }}</h3>
+{% assign documents = collection[1].docs | sort: 'order', 'last' %}
+<ul>
+{% for doc in documents %}
+	<li>
+    <a href="{{ site.url }}{{ doc.url }}">{{ doc.title }}</a>
+  </li>
+{% endfor %}
+</ul>
+{% endfor %}
 </div>

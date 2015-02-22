@@ -16,7 +16,7 @@ html {
 	#services { display: none; }
 
 	h1, h2, h3, h4, h5, h6 {
-		color:#21b799;
+		color:#444;
 	}
 
 	h1 {
@@ -34,7 +34,7 @@ html {
 		line-height:64px;
 		font-weight:300;
 		text-align:center;
-		color:#21b799;
+		color:#444;
 		z-index:1;
 	}
 
@@ -49,7 +49,7 @@ html {
 		left:50%;
 		margin-left:-60px;
 		font-size:120px;
-		color:#eee;
+		color:#444;
 		z-index:-1;
 	}
 
@@ -75,14 +75,10 @@ html {
 		text-decoration:none;
 	}
 
-	a {
-		color: #30695a;
-		text-decoration: none;
-	}
-
+	a, 
 	a:hover,
 	a:focus {
-		color: #327b69;
+		color: #fff;
 		text-decoration: none;
 	}
 
@@ -97,7 +93,7 @@ html {
 
 	.jumbotron {
 		background:transparent;
-		color:#21b799;
+		color:#444;
 	}
 
 	header.jumbotron {
@@ -179,7 +175,7 @@ html {
 
 	#services .row.line {
 	    height:6px;
-	    background:#21b799;
+	    background:#444;
 	    margin-bottom:24px;
 	}
 
@@ -188,7 +184,7 @@ html {
 	    display:block;
 	    width:20px;
 	    height:20px;
-	    background:#21b799;
+	    background:#444;
 	    border:5px solid #fff;
 	    border-radius:50%;
 	}
@@ -205,7 +201,7 @@ html {
 	    line-height:130px;
 	    color:#ccc;
 	    background:none;
-	    border:10px solid #21b799;
+	    border:10px solid #444;
 	    border-radius:50%;
 	    z-index:1;
 	    -webkit-transition:color 0.2s ease-in;
@@ -222,9 +218,9 @@ html {
 	    position:absolute;
 	    width:100%;
 	    height:100%;
-	    background:#21b799;
+	    background:#444;
 	    border-radius:50%;
-	    border:2px solid #21b799;
+	    border:2px solid #444;
 	    -webkit-box-sizing: content-box;
 	    -moz-box-sizing: content-box;
 	    box-sizing: content-box;
@@ -281,7 +277,7 @@ html {
 
 	footer {
 		color:#fff;
-		background:#21b799;
+		background:#444;
 		padding:30px 0;
 	}
 
@@ -296,7 +292,7 @@ html {
 		font-size:24px;
 		line-height:24px;
 		font-weight:normal;
-		/*color:#21b799;*/
+		/*color:#444;*/
 	}
 
 	footer .small-logo span {
@@ -319,7 +315,7 @@ html {
 		display:inline-block;
 		padding:0 15px;
 		line-height:24px;
-		border-right:1px solid #21b799;
+		border-right:1px solid #444;
 	}
 
 	footer ul.footer-nav li:first-child{
@@ -331,7 +327,7 @@ html {
 	}
 
 	footer ul.footer-nav li a{
-		/*color:#21b799;*/
+		/*color:#444;*/
 		text-decoration:none;
 		font-size:14px;
 		line-height:24px;
@@ -350,7 +346,7 @@ html {
 	}
 
 	footer p{
-		/*color:#21b799;*/
+		/*color:#444;*/
 		font-size:14px;
 		line-height:24px;
 		font-weight:400;

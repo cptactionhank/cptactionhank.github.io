@@ -16,10 +16,10 @@
 
       <div class="col-md-3 col-xs-6">
         <ul class="fa-ul">
-          {% if site.author.github %}
+          {% if site.author.facebook %}
           <li>
-            <a href="https://github.com/{{ site.author.github }}">
-              <i class="fa fa-li fa-github-alt"></i>{{ site.author.github }}
+            <a href="https://facebook.com/{{ site.author.facebook }}">
+              <i class="fa fa-li fa-facebook-official"></i>{{ site.author.facebook }}
             </a>
           </li>
           {% endif %}
@@ -34,6 +34,27 @@
           <li>
             <a href="https://linkedin.com/in/{{ site.author.linkedin }}">
               <i class="fa fa-li fa-linkedin"></i>{{ site.author.linkedin }}
+            </a>
+          </li>
+          {% endif %}
+          {% if site.author.github %}
+          <li>
+            <a href="https://github.com/{{ site.author.github }}">
+              <i class="fa fa-li fa-github-alt"></i>{{ site.author.github }}
+            </a>
+          </li>
+          {% endif %}
+          {% if site.author.bitbucket %}
+          <li>
+            <a href="https://bitbucket.org/{{ site.author.bitbucket }}">
+              <i class="fa fa-li fa-bitbucket"></i>{{ site.author.bitbucket }}
+            </a>
+          </li>
+          {% endif %}
+          {% if site.author.dockerhub %}
+          <li>
+            <a href="https://registry.hub.docker.com/u/{{ site.author.dockerhub }}">
+              <i class="fa fa-li fa-docker"></i>{{ site.author.dockerhub }}
             </a>
           </li>
           {% endif %}

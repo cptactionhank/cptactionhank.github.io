@@ -11,9 +11,13 @@ author:
   name: Martin Jensen
   email: martin@25144754.dk
   url: "http://25144754.dk" # the base hostname & protocol for your site
-  # twitter_username: dotmaage
-  github:  cptactionhank
+  # facebook: cptactionhank
+  # twitter: dotmaage
   linkedin: martinakseljensen
+  instagram: cptactionhank
+  github:  cptactionhank
+  bitbucket: maage
+  dockerhub: cptactionhank
 
 # Build settings
 markdown: redcarpet
@@ -66,7 +70,18 @@ redcarpet:
 #       baseURL : 'myserver.tld/piwik' # Piwik installation address (without protocol)
 #       idsite : '1'                   # the id of the site on Piwik
 
+collections:
+  docker:
+    title: "Docker Notes"
+    permalink: /notes/:collection/:title/
+    output: true
+
 defaults:
+  - # no layout defaults
+    scope:
+      path: ""
+    values:
+      layout: default
   - # posts defaults
     scope:
       path: /blog/_posts
@@ -74,10 +89,8 @@ defaults:
     values:
       layout: post
       permalink: /blog/:year/:month/:day/:title
-  - # posts defaults
+  - # linux notes defaults
     scope:
-      path: /notes/_posts
-      type: posts
+      type: linux
     values:
-      layout: post
-      permalink: /:categories/:title
+      layout: notes
